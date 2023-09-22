@@ -1,0 +1,13 @@
+.editor-container{
+    padding: 8px;
+}
+.demo-wrapper {
+    border: 1px solid #ccc;
+}
+.public-DraftEditorPlaceholder-inner{
+    padding: 0px 5px;
+}
+.demo-editor.rdw-editor-main{
+    padding: 0px 5px;
+
+}

@@ -1,0 +1,10 @@
+{
+    "production": {
+        "desc": "Does not require any PORT, specify it in nginx",
+        "howToMakeBuild": "In the root of the folder, RUN yarn build"
+    },
+    "development": {
+        "desc": "As the API runs on PORT 3000, hit this command in root folder -> yarn start:dev",
+        "PORT": 3001
+    }
+}
