@@ -97,7 +97,32 @@ class TableComponent extends Component {
                     name: "longDescription",
                     label: "Long Description",
                     type: 28
-                }
+                },
+                {
+                    name: "gettingThere",
+                    label: "Getting There",
+                    type: 28,
+                },
+                {
+                    name: "whatToDo",
+                    label: "What To Do",
+                    type: 28,
+                },
+                {
+                    name: "timeToVisit",
+                    label: "Time To Visit",
+                    type: 28,
+                },
+                {
+                    name: "whereToStay",
+                    label: "Where To Stay",
+                    type: 28,
+                },
+                {
+                    name: "additionalInformation",
+                    label: "Additional Information",
+                    type: 28,
+                },
             ],
             easyDestinationformFields: [
                 {
@@ -328,6 +353,11 @@ class TableComponent extends Component {
             coordinates: data.coordinates,
             description: data.description,
             longDescription: data.longDescription,
+            gettingThere: data.gettingThere,
+            whatToDo: data.whatToDo,
+            timeToVisit: data.timeToVisit,
+            whereToStay: data.whereToStay,
+            additionalInformation: data.additionalInformation,
             parentCategories: data.parentCategories,
             parentActivities: data.parentActivities,
             surroundings: data.surroundings,
@@ -366,6 +396,11 @@ class TableComponent extends Component {
             coordinates: data.coordinates,
             description: data.description,
             longDescription: data.longDescription,
+            gettingThere: data.gettingThere,
+            whatToDo: data.whatToDo,
+            timeToVisit: data.timeToVisit,
+            whereToStay: data.whereToStay,
+            additionalInformation: data.additionalInformation,
             parentCategories: data.parentCategories,
             parentActivities: data.parentActivities,
             surroundings: data.surroundings,

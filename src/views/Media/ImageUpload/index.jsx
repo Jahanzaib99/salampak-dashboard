@@ -151,40 +151,41 @@ class ImageUploadComponent extends Component {
             isLoading: true,
         }, async () => {
             await formData.forEach(async item => {
-                console.log("??????>>>>>>>>>>>")
+                console.log(`${this.props.apiUrl}/${this.state.objectId}/photos`);
+                console.log(item);
                 // let data = {
                 //     photo: item,
                 //     locationId: this.state.objectId
                 // }
-                await axios
-                    .post(`${this.props.apiUrl}/${this.state.objectId}/photos`, item)
-                    .then(response => {
-                        success = response.data.data.message;
-                        let temp = this.state.links;
-                        temp.push(response.data.data.photo)
-                        this.setState({
-                            links: temp,
-                            isLoading: false,
-                            images: [],
-                            base64: [],
-                            widths: [],
-                            heights: [],
-                            formData:[]
-                        }, () => {
-                            this.setState({
-                                saveButton: false
-                            });
-                        });
-                    })
-                    .catch(error => {
-                        this.setState({
-                            isLoading: false,
-                        }, () => {
-                            swal(error?.response?.data.error?.message ? error?.response?.data.error?.message : "Something wrong", {
-                                icon: 'error'
-                            });
-                        });
-                    });
+                // await axios
+                //     .post(`${this.props.apiUrl}/${this.state.objectId}/photos`, item)
+                //     .then(response => {
+                //         success = response.data.data.message;
+                //         let temp = this.state.links;
+                //         temp.push(response.data.data.photo)
+                //         this.setState({
+                //             links: temp,
+                //             isLoading: false,
+                //             images: [],
+                //             base64: [],
+                //             widths: [],
+                //             heights: [],
+                //             formData:[]
+                //         }, () => {
+                //             this.setState({
+                //                 saveButton: false
+                //             });
+                //         });
+                //     })
+                //     .catch(error => {
+                //         this.setState({
+                //             isLoading: false,
+                //         }, () => {
+                //             swal(error?.response?.data.error?.message ? error?.response?.data.error?.message : "Something wrong", {
+                //                 icon: 'error'
+                //             });
+                //         });
+                //     });
             });
         })
         if (success.length > 0) {

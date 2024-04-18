@@ -133,6 +133,11 @@ export default function Form(props) {
     surroundings: [],
     description: "",
     longDescription: "",
+    gettingThere: "",
+    whatToDo: "",
+    timeToVisit: "",
+    whereToStay: "",
+    additionalInformation: "",
     parentProvince: "",
     weatherId: "",
     isFeatured: false,
@@ -188,6 +193,21 @@ export default function Form(props) {
         longDescription: props.data.longDescription
           ? props.data.longDescription
           : "",
+        gettingThere: props.data.gettingThere
+          ? props.data.gettingThere
+          : "",
+        whatToDo: props.data.whatToDo
+          ? props.data.whatToDo
+          : "",
+        timeToVisit: props.data.timeToVisit
+          ? props.data.timeToVisit
+          : "",
+        whereToStay: props.data.whereToStay
+          ? props.data.whereToStay
+          : "",
+        additionalInformation: props.data.additionalInformation
+          ? props.data.additionalInformation
+          : "",
         parentProvince: props.data.parentProvince
           ? props.data.parentProvince
           : "",
@@ -229,6 +249,11 @@ export default function Form(props) {
         surroundings: [],
         description: "",
         longDescription: "",
+        gettingThere: "",
+        whatToDo: "",
+        timeToVisit: "",
+        whereToStay: "",
+        additionalInformation: "",
         parentProvince: "",
         weatherId: "",
         isFeatured: false,
@@ -257,6 +282,11 @@ export default function Form(props) {
         surroundings: data.surroundings,
         description: data.description,
         longDescription: data.longDescription,
+        gettingThere: data.gettingThere,
+        whatToDo: data.whatToDo,
+        timeToVisit: data.timeToVisit,
+        whereToStay: data.whereToStay,
+        additionalInformation: data.whereToStay,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -274,6 +304,11 @@ export default function Form(props) {
         surroundings: data.surroundings,
         description: data.description,
         longDescription: data.longDescription,
+        gettingThere: data.gettingThere,
+        whatToDo: data.whatToDo,
+        timeToVisit: data.timeToVisit,
+        whereToStay: data.whereToStay,
+        additionalInformation: data.whereToStay,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -291,6 +326,11 @@ export default function Form(props) {
         surroundings: data.surroundings,
         description: data.description,
         longDescription: data.longDescription,
+        gettingThere: data.gettingThere,
+        whatToDo: data.whatToDo,
+        timeToVisit: data.timeToVisit,
+        whereToStay: data.whereToStay,
+        additionalInformation: data.whereToStay,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -308,6 +348,11 @@ export default function Form(props) {
         surroundings: data.surroundings,
         description: data.description,
         longDescription: data.longDescription,
+        gettingThere: data.gettingThere,
+        whatToDo: data.whatToDo,
+        timeToVisit: data.timeToVisit,
+        whereToStay: data.whereToStay,
+        additionalInformation: data.whereToStay,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -325,6 +370,11 @@ export default function Form(props) {
         surroundings: data.surroundings,
         description: data.description,
         longDescription: data.longDescription,
+        gettingThere: data.gettingThere,
+        whatToDo: data.whatToDo,
+        timeToVisit: data.timeToVisit,
+        whereToStay: data.whereToStay,
+        additionalInformation: data.whereToStay,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -342,6 +392,11 @@ export default function Form(props) {
         surroundings: data.surroundings,
         description: data.description,
         longDescription: data.longDescription,
+        gettingThere: data.gettingThere,
+        whatToDo: data.whatToDo,
+        timeToVisit: data.timeToVisit,
+        whereToStay: data.whereToStay,
+        additionalInformation: data.whereToStay,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -359,6 +414,11 @@ export default function Form(props) {
         surroundings: data.surroundings,
         description: data.description,
         longDescription: data.longDescription,
+        gettingThere: data.gettingThere,
+        whatToDo: data.whatToDo,
+        timeToVisit: data.timeToVisit,
+        whereToStay: data.whereToStay,
+        additionalInformation: data.whereToStay,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -376,6 +436,11 @@ export default function Form(props) {
         surroundings: data.surroundings,
         description: value.target.value,
         longDescription: data.longDescription,
+        gettingThere: data.gettingThere,
+        whatToDo: data.whatToDo,
+        timeToVisit: data.timeToVisit,
+        whereToStay: data.whereToStay,
+        additionalInformation: data.whereToStay,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -393,6 +458,11 @@ export default function Form(props) {
         surroundings: data.surroundings,
         description: data.description,
         longDescription: data.longDescription,
+        gettingThere: data.gettingThere,
+        whatToDo: data.whatToDo,
+        timeToVisit: data.timeToVisit,
+        whereToStay: data.whereToStay,
+        additionalInformation: data.whereToStay,
         parentProvince: value.target.value,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -410,6 +480,11 @@ export default function Form(props) {
         surroundings: data.surroundings,
         description: data.description,
         longDescription: value.target.value,
+        gettingThere: data.gettingThere,
+        whatToDo: data.whatToDo,
+        timeToVisit: data.timeToVisit,
+        whereToStay: data.whereToStay,
+        additionalInformation: data.whereToStay,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -427,6 +502,11 @@ export default function Form(props) {
         surroundings: data.surroundings,
         description: data.description,
         longDescription: data.longDescription,
+        gettingThere: data.gettingThere,
+        whatToDo: data.whatToDo,
+        timeToVisit: data.timeToVisit,
+        whereToStay: data.whereToStay,
+        additionalInformation: data.whereToStay,
         parentProvince: data.parentProvince,
         weatherId: value.target.value,
         isFeatured: data.isFeatured,
@@ -444,6 +524,11 @@ export default function Form(props) {
         surroundings: data.surroundings,
         description: data.description,
         longDescription: data.longDescription,
+        gettingThere: data.gettingThere,
+        whatToDo: data.whatToDo,
+        timeToVisit: data.timeToVisit,
+        whereToStay: data.whereToStay,
+        additionalInformation: data.whereToStay,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: value.target.checked,
@@ -480,6 +565,11 @@ export default function Form(props) {
         surroundings: value.target.value,
         description: data.description,
         longDescription: data.longDescription,
+        gettingThere: data.gettingThere,
+        whatToDo: data.whatToDo,
+        timeToVisit: data.timeToVisit,
+        whereToStay: data.whereToStay,
+        additionalInformation: data.whereToStay,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -521,6 +611,11 @@ export default function Form(props) {
   };
   const handleSubmit = () => {
     data.longDescription = editorValue ? editorValue : data.longDescription;
+    data.gettingThere = editorValue ? editorValue : data.gettingThere;
+    data.whatToDo = editorValue ? editorValue : data.whatToDo;
+    data.timeToVisit = editorValue ? editorValue : data.timeToVisit;
+    data.whereToStay = editorValue ? editorValue : data.whereToStay;
+    data.additionalInformation = editorValue ? editorValue : data.additionalInformation;
     if (props.submit) {
       data.coordinates = [];
       data.coordinates[0] = data.longitude;
@@ -741,8 +836,18 @@ export default function Form(props) {
                                   ? data.latitude
                                   : item.type === 8
                                     ? data.description
-                                    : item.type === 10
-                                      ? data.longDescription
+                                      : item.type === 10
+                                        ? data.longDescription
+                                      : item.type === 10
+                                        ? data.timeToVisit
+                                      : item.type === 10
+                                        ? data.whatToDo
+                                      : item.type === 10
+                                        ? data.whereToStay
+                                      : item.type === 10
+                                        ? data.gettingThere
+                                      : item.type === 10
+                                        ? data.additionalInformation
                                       : item.type === 11
                                         ? data.weatherId
                                         : item.type === 14

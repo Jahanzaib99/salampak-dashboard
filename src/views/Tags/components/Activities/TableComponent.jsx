@@ -213,6 +213,11 @@ class TableComponent extends Component {
             coordinates: data.coordinates[0] && data.coordinates[1] ? [+data.coordinates[0], +data.coordinates[1]] : [],
             description: data.description,
             longDescription: data.longDescription,
+            gettingThere: data.gettingThere,
+            whatToDo: data.whatToDo,
+            timeToVisit: data.timeToVisit,
+            whereToStay: data.whereToStay,
+            additionalInformation: data.additionalInformation,
             parentCategories: data.parentCategories,
             activityType: data.type,
             isFeatured: data.isFeatured
