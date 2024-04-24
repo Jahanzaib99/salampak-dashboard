@@ -616,9 +616,8 @@ export default function Form(props) {
   };
   const handleSubmit = () => {
     data.longDescription = editorValue ? editorValue : data.longDescription;
-    data.whatToDo = editorValue1 ? editorValue1 : data.whatToDo;
-    data.gettingThere = editorValue2 ? editorValue2 : data.gettingThere;
-
+    data.gettingThere = editorValue1 ? editorValue1 : data.whatToDo;
+    data.whatToDo = editorValue2 ? editorValue2 : data.gettingThere;
     data.timeToVisit = editorValue3 ? editorValue3 : data.timeToVisit;
     data.whereToStay = editorValue4 ? editorValue4 : data.whereToStay;
     data.additionalInformation = editorValue5 ? editorValue5 : data.additionalInformation;
