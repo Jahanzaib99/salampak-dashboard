@@ -122,6 +122,11 @@ export default function Form(props) {
   const [open, setOpen] = React.useState(false);
   const userPermissions = useSelector(state => state.auth.userPermissions)
   const [editorValue, setEditorValue,] = useState("");
+  const [editorValue1, setEditorValue1,] = useState("");
+  const [editorValue2, setEditorValue2,] = useState("");
+  const [editorValue3, setEditorValue3,] = useState("");
+  const [editorValue4, setEditorValue4,] = useState("");
+  const [editorValue5, setEditorValue5,] = useState("");
   const [data, setData] = React.useState({
     name: "",
     alias: "",
@@ -611,11 +616,12 @@ export default function Form(props) {
   };
   const handleSubmit = () => {
     data.longDescription = editorValue ? editorValue : data.longDescription;
-    data.gettingThere = editorValue ? editorValue : data.gettingThere;
-    data.whatToDo = editorValue ? editorValue : data.whatToDo;
-    data.timeToVisit = editorValue ? editorValue : data.timeToVisit;
-    data.whereToStay = editorValue ? editorValue : data.whereToStay;
-    data.additionalInformation = editorValue ? editorValue : data.additionalInformation;
+    data.whatToDo = editorValue1 ? editorValue1 : data.whatToDo;
+    data.gettingThere = editorValue2 ? editorValue2 : data.gettingThere;
+
+    data.timeToVisit = editorValue3 ? editorValue3 : data.timeToVisit;
+    data.whereToStay = editorValue4 ? editorValue4 : data.whereToStay;
+    data.additionalInformation = editorValue5 ? editorValue5 : data.additionalInformation;
     if (props.submit) {
       data.coordinates = [];
       data.coordinates[0] = data.longitude;
@@ -751,8 +757,12 @@ export default function Form(props) {
                   item.type !== 21 &&
                   item.type !== 22 &&
                   item.type !== 24 &&
-                  item.type !== 28
-                  &&
+                  item.type !== 28 && 
+                  item.type !== 29 &&
+                  item.type !== 30 && 
+                  item.type !== 31 && 
+                  item.type !== 32 && 
+                  item.type !== 33 &&
                   // (item.type !== 16 || !props.update) &&
                   (item.type !== 18 || !props.update || item?.showfield)
                 ) {
@@ -1155,9 +1165,90 @@ export default function Form(props) {
                   );
                 }
                 else if (item.type === 28) {
+                  // console.log("item", item.name);
                   return (
                     < MyEditor
                       onChange={(e) => setEditorValue(e)}
+                      name={item.name ? item.name : ""}
+                      mL={100}
+                      height="auto"
+                      background="#f8fafc"
+                      width="80%"
+                      value={data?.[item.name] ? data?.[item.name] : ""}
+                      placeholder={item?.label ? item?.label : "placeholder..."}
+                      data={data?.[item.name]}
+                    />
+                  )
+                }
+                else if (item.type === 29) {
+                  // console.log("item", item.name);
+                  return (
+                    < MyEditor
+                      onChange={(e) => setEditorValue1(e)}
+                      name={item.name ? item.name : ""}
+                      mL={100}
+                      height="auto"
+                      background="#f8fafc"
+                      width="80%"
+                      value={data?.[item.name] ? data?.[item.name] : ""}
+                      placeholder={item?.label ? item?.label : "placeholder..."}
+                      data={data?.[item.name]}
+                    />
+                  )
+                }
+                else if (item.type === 30) {
+                  // console.log("item", item.name);
+                  return (
+                    < MyEditor
+                      onChange={(e) => setEditorValue2(e)}
+                      name={item.name ? item.name : ""}
+                      mL={100}
+                      height="auto"
+                      background="#f8fafc"
+                      width="80%"
+                      value={data?.[item.name] ? data?.[item.name] : ""}
+                      placeholder={item?.label ? item?.label : "placeholder..."}
+                      data={data?.[item.name]}
+                    />
+                  )
+                }
+                else if (item.type === 31) {
+                  // console.log("item", item.name);
+                  return (
+                    < MyEditor
+                      onChange={(e) => setEditorValue3(e)}
+                      name={item.name ? item.name : ""}
+                      mL={100}
+                      height="auto"
+                      background="#f8fafc"
+                      width="80%"
+                      value={data?.[item.name] ? data?.[item.name] : ""}
+                      placeholder={item?.label ? item?.label : "placeholder..."}
+                      data={data?.[item.name]}
+                    />
+                  )
+                }
+                else if (item.type === 32) {
+                  // console.log("item", item.name);
+                  return (
+                    < MyEditor
+                      onChange={(e) => setEditorValue4(e)}
+                      name={item.name ? item.name : ""}
+                      mL={100}
+                      height="auto"
+                      background="#f8fafc"
+                      width="80%"
+                      value={data?.[item.name] ? data?.[item.name] : ""}
+                      placeholder={item?.label ? item?.label : "placeholder..."}
+                      data={data?.[item.name]}
+                    />
+                  )
+                }
+                else if (item.type === 33) {
+                  // console.log("item", item.name);
+                  return (
+                    < MyEditor
+                      onChange={(e) => setEditorValue5(e)}
                       name={item.name ? item.name : ""}
                       mL={100}
                       height="auto"

@@ -101,27 +101,27 @@ class TableComponent extends Component {
                 {
                     name: "gettingThere",
                     label: "Getting There",
-                    type: 28,
+                    type: 29,
                 },
                 {
                     name: "whatToDo",
                     label: "What To Do",
-                    type: 28,
+                    type: 30,
                 },
                 {
                     name: "timeToVisit",
                     label: "Time To Visit",
-                    type: 28,
+                    type: 31,
                 },
                 {
                     name: "whereToStay",
                     label: "Where To Stay",
-                    type: 28,
+                    type: 32,
                 },
                 {
                     name: "additionalInformation",
                     label: "Additional Information",
-                    type: 28,
+                    type: 33,
                 },
             ],
             easyDestinationformFields: [
