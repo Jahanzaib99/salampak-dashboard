@@ -69,6 +69,11 @@ class TableComponent extends Component {
                     type: 1
                 },
                 {
+                    name: "order",
+                    label: "Order",
+                    type: 34,
+                },
+                {
                     name: "alias",
                     label: "Alias",
                     type: 2
@@ -123,6 +128,8 @@ class TableComponent extends Component {
                     label: "Additional Information",
                     type: 33,
                 },
+                
+                
             ],
             easyDestinationformFields: [
                 {
@@ -358,6 +365,7 @@ class TableComponent extends Component {
             timeToVisit: data.timeToVisit,
             whereToStay: data.whereToStay,
             additionalInformation: data.additionalInformation,
+            order: data.order,
             parentCategories: data.parentCategories,
             parentActivities: data.parentActivities,
             surroundings: data.surroundings,
@@ -401,6 +409,7 @@ class TableComponent extends Component {
             timeToVisit: data.timeToVisit,
             whereToStay: data.whereToStay,
             additionalInformation: data.additionalInformation,
+            order: data.order,
             parentCategories: data.parentCategories,
             parentActivities: data.parentActivities,
             surroundings: data.surroundings,

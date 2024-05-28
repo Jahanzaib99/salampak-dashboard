@@ -143,6 +143,7 @@ export default function Form(props) {
     timeToVisit: "",
     whereToStay: "",
     additionalInformation: "",
+    order: null,
     parentProvince: "",
     weatherId: "",
     isFeatured: false,
@@ -213,6 +214,9 @@ export default function Form(props) {
         additionalInformation: props.data.additionalInformation
           ? props.data.additionalInformation
           : "",
+        order: props.data.order
+          ? props.data.order
+          : null,
         parentProvince: props.data.parentProvince
           ? props.data.parentProvince
           : "",
@@ -259,6 +263,7 @@ export default function Form(props) {
         timeToVisit: "",
         whereToStay: "",
         additionalInformation: "",
+        order: null,
         parentProvince: "",
         weatherId: "",
         isFeatured: false,
@@ -292,6 +297,7 @@ export default function Form(props) {
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
         additionalInformation: data.whereToStay,
+        order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -314,6 +320,7 @@ export default function Form(props) {
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
         additionalInformation: data.whereToStay,
+        order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -336,6 +343,30 @@ export default function Form(props) {
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
         additionalInformation: data.whereToStay,
+        order: data.order,
+        parentProvince: data.parentProvince,
+        weatherId: data.weatherId,
+        isFeatured: data.isFeatured,
+      });
+    } else if (id === 34) {
+      setData({
+        ...data,
+        name: data.name,
+        alias: data.alias,
+        longitude: data.longitude,
+        latitude: data.latitude,
+        type: data.type,
+        parentCategories: data.parentCategories,
+        parentActivities: data.parentActivities,
+        surroundings: data.surroundings,
+        description: data.description,
+        longDescription: data.longDescription,
+        gettingThere: data.gettingThere,
+        whatToDo: data.whatToDo,
+        timeToVisit: data.timeToVisit,
+        whereToStay: data.whereToStay,
+        additionalInformation: data.whereToStay,
+        order: value.target.value,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -358,6 +389,7 @@ export default function Form(props) {
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
         additionalInformation: data.whereToStay,
+        order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -380,6 +412,7 @@ export default function Form(props) {
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
         additionalInformation: data.whereToStay,
+        order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -402,6 +435,7 @@ export default function Form(props) {
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
         additionalInformation: data.whereToStay,
+        order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -424,6 +458,7 @@ export default function Form(props) {
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
         additionalInformation: data.whereToStay,
+        order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -446,6 +481,7 @@ export default function Form(props) {
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
         additionalInformation: data.whereToStay,
+        order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -468,6 +504,7 @@ export default function Form(props) {
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
         additionalInformation: data.whereToStay,
+        order: data.order,
         parentProvince: value.target.value,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -490,6 +527,7 @@ export default function Form(props) {
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
         additionalInformation: data.whereToStay,
+        order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -512,6 +550,7 @@ export default function Form(props) {
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
         additionalInformation: data.whereToStay,
+        order: data.order,
         parentProvince: data.parentProvince,
         weatherId: value.target.value,
         isFeatured: data.isFeatured,
@@ -534,6 +573,7 @@ export default function Form(props) {
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
         additionalInformation: data.whereToStay,
+        order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: value.target.checked,
@@ -575,6 +615,7 @@ export default function Form(props) {
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
         additionalInformation: data.whereToStay,
+        order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
         isFeatured: data.isFeatured,
@@ -762,6 +803,7 @@ export default function Form(props) {
                   item.type !== 31 && 
                   item.type !== 32 && 
                   item.type !== 33 &&
+                  // item.type !== 34 &&
                   // (item.type !== 16 || !props.update) &&
                   (item.type !== 18 || !props.update || item?.showfield)
                 ) {
@@ -770,7 +812,7 @@ export default function Form(props) {
                       item
                       xs={12}
                       sm={12}
-                      md={item.type === 3 || item.type === 4 ? 6 : 12}
+                      md={item.type === 34 || item.type === 3 || item.type === 4 ? 6 : 12}
                     >
                       <TextFields
                         key={index}
@@ -784,12 +826,12 @@ export default function Form(props) {
                             ? "password"
                             : item.type === 3 ||
                               item.type === 4 ||
-                              item.type === 17
+                              item.type === 17 || item.type === 34
                               ? "number"
                               : "text"
                         }
                         variant="outlined"
-                        autoFocus={item.type === 1 ? true : false}
+                        autoFocus={(item.type === 1 || item.type === 34) ? true : false}
                         multiline={
                           item.type === 8 || item.type === 10 ? true : false
                         }
@@ -799,6 +841,8 @@ export default function Form(props) {
                             e,
                             item.type === 1
                               ? 1
+                            : item.type === 34
+                              ? 34
                               : item.type === 2
                                 ? 2
                                 : item.type === 3
@@ -837,6 +881,8 @@ export default function Form(props) {
                         value={
                           item.type === 1
                             ? data.name
+                            : item.type === 34
+                              ? data.order
                             : item.type === 2
                               ? data.alias
                               : item.type === 3
