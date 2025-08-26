@@ -319,7 +319,7 @@ export default function Form(props) {
         whatToDo: data.whatToDo,
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
-        additionalInformation: data.whereToStay,
+        additionalInformation: data.additionalInformation,
         order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
@@ -342,7 +342,7 @@ export default function Form(props) {
         whatToDo: data.whatToDo,
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
-        additionalInformation: data.whereToStay,
+        additionalInformation: data.additionalInformation,
         order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
@@ -365,7 +365,7 @@ export default function Form(props) {
         whatToDo: data.whatToDo,
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
-        additionalInformation: data.whereToStay,
+        additionalInformation: data.additionalInformation,
         order: value.target.value,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
@@ -388,7 +388,7 @@ export default function Form(props) {
         whatToDo: data.whatToDo,
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
-        additionalInformation: data.whereToStay,
+        additionalInformation: data.additionalInformation,
         order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
@@ -411,7 +411,7 @@ export default function Form(props) {
         whatToDo: data.whatToDo,
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
-        additionalInformation: data.whereToStay,
+        additionalInformation: data.additionalInformation,
         order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
@@ -434,7 +434,7 @@ export default function Form(props) {
         whatToDo: data.whatToDo,
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
-        additionalInformation: data.whereToStay,
+        additionalInformation: data.additionalInformation,
         order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
@@ -457,7 +457,7 @@ export default function Form(props) {
         whatToDo: data.whatToDo,
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
-        additionalInformation: data.whereToStay,
+        additionalInformation: data.additionalInformation,
         order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
@@ -480,7 +480,7 @@ export default function Form(props) {
         whatToDo: data.whatToDo,
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
-        additionalInformation: data.whereToStay,
+        additionalInformation: data.additionalInformation,
         order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
@@ -503,7 +503,7 @@ export default function Form(props) {
         whatToDo: data.whatToDo,
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
-        additionalInformation: data.whereToStay,
+        additionalInformation: data.additionalInformation,
         order: data.order,
         parentProvince: value.target.value,
         weatherId: data.weatherId,
@@ -526,7 +526,7 @@ export default function Form(props) {
         whatToDo: data.whatToDo,
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
-        additionalInformation: data.whereToStay,
+        additionalInformation: data.additionalInformation,
         order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
@@ -549,7 +549,7 @@ export default function Form(props) {
         whatToDo: data.whatToDo,
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
-        additionalInformation: data.whereToStay,
+        additionalInformation: data.additionalInformation,
         order: data.order,
         parentProvince: data.parentProvince,
         weatherId: value.target.value,
@@ -572,7 +572,7 @@ export default function Form(props) {
         whatToDo: data.whatToDo,
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
-        additionalInformation: data.whereToStay,
+        additionalInformation: data.additionalInformation,
         order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
@@ -614,7 +614,7 @@ export default function Form(props) {
         whatToDo: data.whatToDo,
         timeToVisit: data.timeToVisit,
         whereToStay: data.whereToStay,
-        additionalInformation: data.whereToStay,
+        additionalInformation: data.additionalInformation,
         order: data.order,
         parentProvince: data.parentProvince,
         weatherId: data.weatherId,
@@ -657,8 +657,8 @@ export default function Form(props) {
   };
   const handleSubmit = () => {
     data.longDescription = editorValue ? editorValue : data.longDescription;
-    data.gettingThere = editorValue1 ? editorValue1 : data.whatToDo;
-    data.whatToDo = editorValue2 ? editorValue2 : data.gettingThere;
+    data.gettingThere = editorValue1 ? editorValue1 : data.gettingThere;
+    data.whatToDo = editorValue2 ? editorValue2 : data.whatToDo;
     data.timeToVisit = editorValue3 ? editorValue3 : data.timeToVisit;
     data.whereToStay = editorValue4 ? editorValue4 : data.whereToStay;
     data.additionalInformation = editorValue5 ? editorValue5 : data.additionalInformation;
@@ -891,17 +891,17 @@ export default function Form(props) {
                                   ? data.latitude
                                   : item.type === 8
                                     ? data.description
-                                      : item.type === 10
+                                      : item.type === 28
                                         ? data.longDescription
-                                      : item.type === 10
+                                      : item.type === 31
                                         ? data.timeToVisit
-                                      : item.type === 10
+                                      : item.type === 30
                                         ? data.whatToDo
-                                      : item.type === 10
+                                      : item.type === 32
                                         ? data.whereToStay
-                                      : item.type === 10
+                                      : item.type === 29
                                         ? data.gettingThere
-                                      : item.type === 10
+                                      : item.type === 33
                                         ? data.additionalInformation
                                       : item.type === 11
                                         ? data.weatherId
